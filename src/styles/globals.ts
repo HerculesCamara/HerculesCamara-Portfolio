@@ -8,6 +8,9 @@ const styles = css`
     --gray-dark: #161618;
     --gray-medium: #bcbcbc;
     --gray-light: #e1e1e6;
+
+    --blue-light: #81bece;
+    --blue-medium: #378ba4;
   }
 
   html,

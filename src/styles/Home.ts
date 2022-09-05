@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.div`
   padding: 6.75rem;
   flex: 1;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 export const Content = styled.div`
   max-width: 65.375rem;
@@ -58,7 +62,7 @@ export const Links = styled.div`
   margin-top: 3rem;
 `
 
-export const Projects = styled.a`
+export const Projects = styled.button`
   padding: 1rem 3.125rem;
 
   font-size: 1.25rem;
@@ -94,7 +98,7 @@ export const Projects = styled.a`
   }
 `
 
-export const Contact = styled.a`
+export const Contact = styled.button`
   font-size: 1.25rem;
   font-weight: 700;
   color: white;
@@ -112,5 +116,17 @@ export const Contact = styled.a`
 
   :hover {
     cursor: pointer;
+  }
+`
+
+export const Mobile = styled.div`
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1000px) {
+    display: none;
   }
 `

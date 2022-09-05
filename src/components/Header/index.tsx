@@ -3,12 +3,14 @@ import { Container, Links, Logo } from './styles'
 export function Header() {
   return (
     <Container>
-      <Logo>Hércules C.</Logo>
+      <Logo>
+        <a href="./">Hércules C.</a>
+      </Logo>
       <Links>
-        <a href="">Projects</a>
-        <a href="">About</a>
-        <a href="">Setup</a>
-        <a href="">Contact</a>
+        <a href="../work-in">Projects</a>
+        <a href="../work-in">About</a>
+        <a href="../work-in">Setup</a>
+        <a href="../work-in">Contact</a>
       </Links>
     </Container>
   )

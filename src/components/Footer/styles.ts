@@ -4,6 +4,10 @@ export const Container = styled.footer`
   width: 100%;
 
   bottom: 0;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 
 export const Content = styled.footer`
