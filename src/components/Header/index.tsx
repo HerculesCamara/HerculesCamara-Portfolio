@@ -8,7 +8,7 @@ export function Header() {
       </Logo>
       <Links>
         <a href="../work-in">Projects</a>
-        <a href="../work-in">About</a>
+        <a href="../about">About</a>
         <a href="../work-in">Setup</a>
         <a href="../work-in">Contact</a>
       </Links>
