@@ -1,68 +1,59 @@
 import styled from 'styled-components'
 
 export const Container = styled.main`
-  padding: 6.75rem;
-  flex: 1;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 7.125rem;
+  padding-bottom: 7.125rem;
+  padding-left: 6.75rem;
+  padding-right: 6.75rem;
 
   @media (max-width: 1000px) {
     display: none;
   }
 `
+
 export const Content = styled.div`
-  max-width: 65.375rem;
+  width: 100%;
+  max-width: 65.25rem;
+
   margin-left: auto;
   margin-right: auto;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
 `
+export const Apresentation = styled.div`
+  max-width: 35.25rem;
 
-export const Apresentation = styled.div``
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--gray-light);
 
-export const Im = styled.div`
-  font-size: 2.75rem;
-  font-weight: 700;
-  color: var(--gray-light);
-
-  span {
-    font-size: 3.125rem;
-
-    background-image: linear-gradient(90deg, #378ba4 0%, #81bece 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: black;
-  }
-`
-
-export const About = styled.p`
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--gray-light);
-
-  margin-top: 1.25rem;
-
-  a {
-    text-decoration: underline;
-
-    transition: filter 0.2s;
-
-    :hover {
-      filter: brightness(0.88);
+    span {
+      background-image: linear-gradient(90deg, #fc8b5e 5%, #c0587e 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: black;
     }
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--gray-light);
+
+    margin-top: 2rem;
   }
 `
 
 export const Buttons = styled.div`
   display: flex;
-  gap: 2.125rem;
+  gap: 2rem;
 
   margin-top: 3rem;
 `
-
-export const Projects = styled.button`
+export const Copy = styled.button`
   padding: 1rem 3.125rem;
 
   font-size: 1.25rem;
@@ -98,7 +89,7 @@ export const Projects = styled.button`
   }
 `
 
-export const Contact = styled.button`
+export const Send = styled.button`
   font-size: 1.25rem;
   font-weight: 700;
   color: white;
@@ -118,7 +109,6 @@ export const Contact = styled.button`
     cursor: pointer;
   }
 `
-
 export const Mobile = styled.div`
   height: 100%;
 

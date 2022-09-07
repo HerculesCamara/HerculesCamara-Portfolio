@@ -41,7 +41,7 @@ export const Apresentation = styled.div`
   p {
     font-size: 1.25rem;
     font-weight: 400;
-    color: var(--gray-medium);
+    color: var(--gray-light);
 
     margin-top: 2rem;
   }
@@ -70,7 +70,7 @@ export const Setup = styled.div`
   p {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--gray-medium);
+    color: var(--gray-light);
 
     margin-top: 0.5rem;
 
@@ -87,7 +87,7 @@ export const Setup = styled.div`
     li {
       font-size: 1.25rem;
       font-weight: 200;
-      color: var(--gray-medium);
+      color: var(--gray-light);
     }
   }
 `

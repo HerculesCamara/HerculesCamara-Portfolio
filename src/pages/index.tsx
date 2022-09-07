@@ -5,11 +5,11 @@ import {
   Container,
   Im,
   Projects,
-  Links,
   Contact,
   Content,
   Apresentation,
-  Mobile
+  Mobile,
+  Buttons
 } from '../styles/Home'
 
 import { Footer } from '../components/Footer'
@@ -46,14 +46,14 @@ const Home: NextPage = () => {
               </a>
               .
             </About>
-            <Links>
+            <Buttons>
               <Projects as="a" href="/work-in">
                 Projects
               </Projects>
               <Contact as="a" href="/work-in">
                 Contact <Image src={arrow} alt="" />
               </Contact>
-            </Links>
+            </Buttons>
           </Apresentation>
           <Image src={me} />
         </Content>
