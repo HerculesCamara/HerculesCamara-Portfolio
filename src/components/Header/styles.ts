@@ -31,25 +31,3 @@ export const Logo = styled.span`
   -webkit-text-fill-color: transparent;
   color: black;
 `
-export const Links = styled.div`
-  width: 100%;
-  max-width: 32.25rem;
-
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-
-  margin-left: 6.75rem;
-
-  a {
-    font-size: 1.375rem;
-    font-weight: 700;
-    color: var(--gray-medium);
-
-    transition: color 0.2s;
-
-    :hover {
-      color: var(--gray-light);
-    }
-  }
-`

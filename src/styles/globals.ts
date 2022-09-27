@@ -6,6 +6,7 @@ const styles = css`
     --black: #000;
 
     --gray-dark: #161618;
+    --gray-dark-medium: #222224;
     --gray-medium: #bcbcbc;
     --gray-light: #e1e1e6;
 

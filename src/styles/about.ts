@@ -20,7 +20,7 @@ export const Content = styled.div`
   margin-right: auto;
 `
 
-export const About = styled.div`
+export const Me = styled.div`
   display: flex;
   gap: 1rem;
 
@@ -58,7 +58,7 @@ export const Apresentation = styled.div`
   }
 `
 
-export const Me = styled.div`
+export const Picture = styled.div`
   margin-top: -0.5rem;
   
   image {

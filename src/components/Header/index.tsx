@@ -1,17 +1,22 @@
-import { Container, Links, Logo } from './styles'
+import { Navigation } from '../Navigation'
+
+import { Container, Logo } from './styles'
 
 export function Header() {
+  /* function handleSetStyle() {
+    if (document.URL.includes('contact')) {
+      
+      let element = document.getElementById('contact')
+      element?.classList.add("active");
+    }
+  } */
+
   return (
     <Container>
       <Logo>
         <a href="./">Hércules C.</a>
       </Logo>
-      <Links>
-        <a href="../work-in">Projects</a>
-        <a href="../about">About</a>
-        <a href="../setup">Setup</a>
-        <a href="../contact">Contact</a>
-      </Links>
+      <Navigation />
     </Container>
   )
 }

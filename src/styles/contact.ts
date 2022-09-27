@@ -4,10 +4,7 @@ export const Container = styled.main`
   width: 100%;
   height: 100%;
 
-  padding-top: 7.125rem;
-  padding-bottom: 7.125rem;
-  padding-left: 6.75rem;
-  padding-right: 6.75rem;
+  padding: 7.125rem 6.75rem;
 
   @media (max-width: 1000px) {
     display: none;

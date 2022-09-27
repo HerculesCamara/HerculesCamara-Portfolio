@@ -16,7 +16,7 @@ import Image from 'next/image'
 import arrow from '@/assets/arrow-right.svg'
 import { WorkInProgress } from '@/components/WorkInProgress'
 
-const WorkIn: NextPage = () => {
+const Contact: NextPage = () => {
   function handleCopyAddress() {
     navigator.clipboard.writeText('heculescamara2013@gmail.com')
     alert('Email address copied successfully')
@@ -53,4 +53,4 @@ const WorkIn: NextPage = () => {
   )
 }
 
-export default WorkIn
+export default Contact

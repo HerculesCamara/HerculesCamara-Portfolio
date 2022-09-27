@@ -16,7 +16,7 @@ import { Footer } from '../components/Footer'
 import Image from 'next/image'
 
 import arrow from '@/assets/arrow-right.svg'
-import me from '@/assets/me-home.png'
+import picture from '@/assets/me-home.png'
 import Head from 'next/head'
 import { WorkInProgress } from '@/components/WorkInProgress'
 
@@ -50,12 +50,12 @@ const Home: NextPage = () => {
               <Projects as="a" href="/work-in">
                 Projects
               </Projects>
-              <Contact as="a" href="/work-in">
+              <Contact as="a" href="/contact">
                 Contact <Image src={arrow} alt="" />
               </Contact>
             </Buttons>
           </Apresentation>
-          <Image src={me} />
+          <Image src={picture} />
         </Content>
       </Container>
       <Footer />

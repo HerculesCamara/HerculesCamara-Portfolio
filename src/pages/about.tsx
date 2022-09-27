@@ -1,11 +1,11 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
 import {
-  About,
+  Me,
   Container,
   Apresentation,
   Career,
-  Me,
+  Picture,
   TimeLine,
   Date,
   Content,
@@ -19,7 +19,7 @@ import Image from 'next/image'
 import me from '@/assets/me-about.png'
 import { WorkInProgress } from '@/components/WorkInProgress'
 
-const WorkIn: NextPage = () => {
+const About: NextPage = () => {
   return (
     <>
       <Head>
@@ -28,7 +28,7 @@ const WorkIn: NextPage = () => {
       <Header />
       <Container>
         <Content>
-          <About>
+          <Me>
             <Apresentation>
               <h1>
                 About <span>Hércules Câmara</span>
@@ -42,10 +42,10 @@ const WorkIn: NextPage = () => {
 
               <p>In my free time I also like to watch series and anime.</p>
             </Apresentation>
-            <Me>
+            <Picture>
               <Image src={me} />
-            </Me>
-          </About>
+            </Picture>
+          </Me>
           <Career>
             <h2>Career</h2>
             <TimeLine>
@@ -89,4 +89,4 @@ const WorkIn: NextPage = () => {
   )
 }
 
-export default WorkIn
+export default About
