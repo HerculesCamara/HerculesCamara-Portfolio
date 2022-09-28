@@ -1,4 +1,8 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+
+interface ListItemWrapperProps {
+  isActive: boolean
+}
 
 export const Container = styled.div`
   position: relative;
@@ -7,15 +11,17 @@ export const Container = styled.div`
   justify-content: flex-end;
 `
 
-export const FilterButton = styled.button`
-  background: transparent;
+export const FilterButton = styled.button<ListItemWrapperProps>`
+  background: ${({ isActive }) =>
+    isActive ? 'var(--gray-dark-medium)' : 'transparent'};
   border: none;
   border-radius: 4px;
   padding: 0.5rem;
 
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--gray-medium);
+  color: ${({ isActive }) =>
+    isActive ? 'var(--gray-light)' : 'var(--gray-medium)'};
 
   display: flex;
   align-items: center;
@@ -27,7 +33,8 @@ export const FilterButton = styled.button`
 
   svg {
     transform: scaleX(-1);
-    fill: var(--gray-medium);
+    fill: ${({ isActive }) =>
+      isActive ? 'var(--gray-light)' : 'var(--gray-medium)'};
 
     width: 0.875rem;
     height: 1rem;
@@ -45,7 +52,9 @@ export const FilterButton = styled.button`
   }
 `
 
-export const List = styled.ul`
+export const List = styled.ul<ListItemWrapperProps>`
+  display: ${({ isActive }) => (isActive ? 'block' : 'none')};
+
   list-style-type: none;
 
   position: absolute;
