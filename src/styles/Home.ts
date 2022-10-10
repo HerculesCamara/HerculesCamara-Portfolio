@@ -74,7 +74,7 @@ export const Projects = styled.button`
   background: transparent;
   border: none;
 
-  /* transition: all 1s; */
+  transition: all 0.2s;
 
   ::before {
     content: '';
@@ -92,8 +92,73 @@ export const Projects = styled.button`
   :hover {
     cursor: pointer;
 
+    filter: brightness(0.9);
+
     ::before {
-      background: linear-gradient(135deg, #81bece, #205767);
+      /* -webkit-animation: AnimationName 1s ease infinite;
+      -moz-animation: AnimationName 1s ease infinite; */
+      /* animation: AnimationName 5s ease infinite; */
+
+      /* @-webkit-keyframes AnimationName {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @-moz-keyframes AnimationName {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      } */
+      @keyframes AnimationName {
+        100% {
+          background: linear-gradient(135deg, #205767, #81bece);
+        }
+        /* 0% {
+          background: linear-gradient(135deg, #205767, #81bece);
+        }
+        10% {
+          background: linear-gradient(155deg, #205767, #81bece);
+        }
+        20% {
+          background: linear-gradient(175deg, #205767, #81bece);
+        }
+        30% {
+          background: linear-gradient(195deg, #205767, #81bece);
+        }
+        40% {
+          background: linear-gradient(215deg, #205767, #81bece);
+        }
+        50% {
+          background: linear-gradient(235deg, #205767, #81bece);
+        }
+        60% {
+          background: linear-gradient(255deg, #205767, #81bece);
+        }
+        70% {
+          background: linear-gradient(275deg, #205767, #81bece);
+        }
+        80% {
+          background: linear-gradient(295deg, #205767, #81bece);
+        }
+        90% {
+          background: linear-gradient(315deg, #205767, #81bece);
+        }
+        100% {
+          background: linear-gradient(335deg, #205767, #81bece);
+        } */
+      }
     }
   }
 `
@@ -114,8 +179,12 @@ export const Contact = styled.button`
 
   background: linear-gradient(94.98deg, #036280 0%, #51a0b5 100%);
 
+  transition: filter 0.2s;
+
   :hover {
     cursor: pointer;
+
+    filter: brightness(1.1);
   }
 `
 
