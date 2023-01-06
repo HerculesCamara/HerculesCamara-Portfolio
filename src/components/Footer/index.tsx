@@ -1,51 +1,51 @@
-import { Container, Content } from './styles'
+import { Container, Content, CssBattle, FrontendMentor, GitHub, Instagram, LinkedIn, Rocketseat } from './styles'
 
 export function Footer() {
   return (
     <Container>
       <Content>
-        <a
+        <Instagram
           href="https://www.instagram.com/herculescamara_/"
           target="_blank"
           rel="noreferrer"
         >
           Instagram
-        </a>
-        <a
+        </Instagram>
+        <LinkedIn
           href="https://www.linkedin.com/in/herculescamara/"
           target="_blank"
           rel="noreferrer"
         >
           LinkedIn
-        </a>
-        <a
+        </LinkedIn>
+        <GitHub
           href="https://github.com/HerculesCamara"
           target="_blank"
           rel="noreferrer"
         >
           GitHub
-        </a>
-        <a
+        </GitHub>
+        <CssBattle
           href="https://cssbattle.dev/player/herculescamara"
           target="_blank"
           rel="noreferrer"
         >
           CSS Battle
-        </a>
-        <a
+        </CssBattle>
+        <Rocketseat
           href="https://app.rocketseat.com.br/me/hercules-camara"
           target="_blank"
           rel="noreferrer"
         >
           Rocketseat
-        </a>
-        <a
+        </Rocketseat>
+        <FrontendMentor
           href="https://www.frontendmentor.io/profile/HerculesCamara"
           target="_blank"
           rel="noreferrer"
         >
-          Front-end Mentor
-        </a>
+          Frontend Mentor
+        </FrontendMentor>
       </Content>
     </Container>
   )

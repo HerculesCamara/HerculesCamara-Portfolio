@@ -64,7 +64,7 @@ const About: NextPage = () => {
               <Date>
                 <h4>2019</h4>
                 <p>
-                  IMFT, Computing course: <span>end</span>
+                  IFMT, Computing course: <span>end</span>
                 </p>
               </Date>
               <Date>

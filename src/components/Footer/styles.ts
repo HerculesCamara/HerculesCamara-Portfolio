@@ -24,10 +24,51 @@ export const Content = styled.footer`
 
   a {
     color: var(--gray-medium);
+  }
+`
 
-    transition: color 0.2s;
-    :hover {
-      color: var(--gray-light);
-    }
+export const Instagram = styled.a`
+  transition: all 2s;
+
+  background-image: linear-gradient(90deg, transparent 0%, transparent 100%);
+  :hover {
+    background-image: linear-gradient(90deg, #5259cf 0%, #eb4c51 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: black;
+  }
+`
+export const LinkedIn = styled.a`
+  transition: all 0.2s;
+  :hover {
+    color: #0077b5;
+  }
+`
+
+export const GitHub = styled.a`
+  transition: all 0.2s;
+  :hover {
+    color: var(--white);
+  }
+`
+
+export const CssBattle = styled.a`
+  transition: all 0.2s;
+  :hover {
+    color: #ffdf00;
+  }
+`
+
+export const Rocketseat = styled.a`
+  transition: all 0.2s;
+  :hover {
+    color: #aeaeb2;
+  }
+`
+export const FrontendMentor = styled.a`
+  transition: all 0.2s;
+  :hover {
+    color: var(--white);
   }
 `

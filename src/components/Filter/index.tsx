@@ -13,8 +13,10 @@ export function Filter() {
         <span>All</span> <FaFilter />
       </FilterButton>
       <List isActive={toggle}>
+        <Item>Personal</Item>
         <Item>Rocketseat</Item>
         <Item>CSS Battle</Item>
+        <Item>Frontend Mentor</Item>
       </List>
     </Container>
   )
