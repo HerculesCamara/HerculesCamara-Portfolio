@@ -26,6 +26,16 @@ export const Cover = styled.div`
   background: var(--white);
 
   border-radius: 8px 8px 0px 0px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
 `
 export const Content = styled.div`
   padding: 1.25rem 0.75rem;
