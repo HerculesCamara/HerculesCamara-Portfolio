@@ -49,7 +49,7 @@ export const Content = styled.div`
   p {
     font-size: 0.875rem;
     font-weight: 300;
-    color: var(--gray-light);
+    color: var(--gray-medium);
 
     margin-top: 0.25rem;
   }

@@ -4,11 +4,12 @@ interface cardProps {
   title?: string
   description?: string
   bannerLink?: string
+  link?: string
 }
 
-export function Card({ title, description, bannerLink }: cardProps) {
+export function Card({ title, description, bannerLink, link }: cardProps) {
   return (
-    <>
+    <a href={link}>
       <Container>
         <Cover>
           <img src={bannerLink} alt="" />
@@ -18,6 +19,6 @@ export function Card({ title, description, bannerLink }: cardProps) {
           <p>{description}</p>
         </Content>
       </Container>
-    </>
+    </a>
   )
 }

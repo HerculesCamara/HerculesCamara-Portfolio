@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Container, FilterButton, Item, List } from './styles'
 
 import { FaFilter } from 'react-icons/fa'
