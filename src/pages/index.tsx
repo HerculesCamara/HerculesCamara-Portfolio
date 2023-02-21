@@ -8,8 +8,9 @@ import {
   Contact,
   Content,
   Apresentation,
-  Mobile,
-  Buttons
+  /* Mobile, */
+  Buttons,
+  MyPicture
 } from '../styles/Home'
 
 import { Footer } from '../components/Footer'
@@ -55,13 +56,15 @@ const Home: NextPage = () => {
               </Contact>
             </Buttons>
           </Apresentation>
-          <Image src={picture} />
+          <MyPicture>
+            <Image src={picture} />
+          </MyPicture>
         </Content>
       </Container>
       <Footer />
-      <Mobile>
+      {/* <Mobile>
         <WorkInProgress />
-      </Mobile>
+      </Mobile> */}
     </>
   )
 }

@@ -3,11 +3,26 @@ import styled from 'styled-components'
 export const Container = styled.main`
   padding: 6.75rem;
   flex: 1;
-
+  
   @media (max-width: 1000px) {
-    display: none;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
   }
 `
+
+/* export const Mobile = styled.div`
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
+` */
+
 export const Content = styled.div`
   max-width: 65.375rem;
   margin-left: auto;
@@ -17,9 +32,19 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+
+  @media (max-width: 1000px) {
+    margin-left: 0;
+  }  
 `
 
 export const Apresentation = styled.div``
+
+export const MyPicture = styled.div`
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`
 
 export const Im = styled.div`
   font-size: 2.75rem;
@@ -34,6 +59,14 @@ export const Im = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: black;
+  }
+
+  @media (max-width: 1000px) {
+      font-size: 1.75rem;
+
+      span {
+        font-size: 2.125rem;
+      }
   }
 `
 
@@ -53,6 +86,10 @@ export const About = styled.p`
       filter: brightness(0.88);
     }
   }
+
+  @media (max-width: 1000px) {
+      font-size: 1rem;
+  }
 `
 
 export const Buttons = styled.div`
@@ -60,13 +97,21 @@ export const Buttons = styled.div`
   gap: 2.125rem;
 
   margin-top: 3rem;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  @media (max-width: 1000px) {
+      gap: 1rem;
+      margin-top: 2.5rem;
+
+      font-size: 1rem;
+  }
 `
 
 export const Projects = styled.button`
   padding: 1rem 3.125rem;
 
-  font-size: 1.25rem;
-  font-weight: 700;
   color: #81bece;
 
   position: relative;
@@ -75,6 +120,9 @@ export const Projects = styled.button`
   border: none;
 
   transition: all 0.2s;
+  
+  display: flex;
+  align-items: center;
 
   ::before {
     content: '';
@@ -161,11 +209,13 @@ export const Projects = styled.button`
       }
     }
   }
+
+  @media (max-width: 1000px) {
+      padding: 0.75rem 2.625rem;
+  }
 `
 
 export const Contact = styled.button`
-  font-size: 1.25rem;
-  font-weight: 700;
   color: white;
 
   padding: 1rem 2rem;
@@ -186,16 +236,13 @@ export const Contact = styled.button`
 
     filter: brightness(1.1);
   }
-`
 
-export const Mobile = styled.div`
-  height: 100%;
+  @media (max-width: 1000px) {
+      padding: 0.75rem 2rem;
+      gap: 0.625rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 1000px) {
-    display: none;
+      img {
+        width: 1.2rem !important;
+      }
   }
 `

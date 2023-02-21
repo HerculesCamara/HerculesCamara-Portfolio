@@ -8,6 +8,10 @@ export const NavigationContainer = styled.nav`
   /* margin-left: 6.75rem; */
   width: 100%;
   max-width: 32.25rem;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `
 
 export const List = styled.ul`

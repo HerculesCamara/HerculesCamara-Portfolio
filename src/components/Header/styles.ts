@@ -15,7 +15,11 @@ export const Container = styled.header`
   justify-content: space-between;
 
   @media (max-width: 1000px) {
-    display: none;
+    padding-top: 4.375rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    /* display: none; */
   }
 `
 
@@ -30,4 +34,8 @@ export const Logo = styled.span`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
+
+  @media (max-width: 1000px) {
+    font-size: 2rem;
+  }
 `
