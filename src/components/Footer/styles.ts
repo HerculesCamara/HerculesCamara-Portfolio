@@ -72,3 +72,6 @@ export const FrontendMentor = styled.a`
     color: var(--white);
   }
 `
+export const MobileContent = styled.div`
+  
+`
