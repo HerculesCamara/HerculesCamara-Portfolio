@@ -12,6 +12,7 @@ const styles = css`
 
     --blue-light: #81bece;
     --blue-medium: #378ba4;
+    --blue-dark: #215869;
   }
 
   html,
