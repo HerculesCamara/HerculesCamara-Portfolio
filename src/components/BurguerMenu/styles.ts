@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import burguerMenu from "@/assets/burguer-menu-icon.svg"
 import burguerMenuClose from "@/assets/burguer-menu-close-icon.svg"
 
@@ -24,7 +25,6 @@ export const Burguer = styled.div<BurguerProps>`
     height: 2.5rem;
     background-image: url(${(props) => props.isOpen ? burguerMenuClose.src : burguerMenu.src});
     background-repeat: no-repeat;
-    content: '';
 `
 
 export const NavigationContainer = styled.div<BurguerProps>`

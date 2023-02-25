@@ -1,6 +1,4 @@
-import Image from "next/image";
 import { Burguer, Container, Item, List, NavigationContainer } from "./styles";
-import burguerMenu from "@/assets/burguer-menu-icon.svg"
 import Link from "next/link";
 import { useRouter } from 'next/router'
 import { useState } from "react";
