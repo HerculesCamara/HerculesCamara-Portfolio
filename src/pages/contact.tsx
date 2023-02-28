@@ -6,7 +6,6 @@ import {
   Container,
   Content,
   Copy,
-  Mobile,
   Send
 } from '@/styles/contact'
 import { NextPage } from 'next'
@@ -14,7 +13,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import arrow from '@/assets/arrow-right.svg'
-import { WorkInProgress } from '@/components/WorkInProgress'
 
 const Contact: NextPage = () => {
   function handleCopyAddress() {
@@ -46,9 +44,6 @@ const Contact: NextPage = () => {
         </Content>
       </Container>
       <Footer />
-      <Mobile>
-        <WorkInProgress />
-      </Mobile>
     </>
   )
 }

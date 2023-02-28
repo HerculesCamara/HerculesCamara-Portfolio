@@ -6,8 +6,8 @@ export const Container = styled.main`
 
   padding: 7.125rem 6.75rem;
 
-  @media (max-width: 1000px) {
-    display: none;
+  @media (max-width: 800px) {
+    padding: 7.125rem 2rem;
   }
 `
 
@@ -42,6 +42,18 @@ export const Apresentation = styled.div`
 
     margin-top: 2rem;
   }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+
+      margin-top: 1.25rem;
+    }
+  }
 `
 
 export const Buttons = styled.div`
@@ -49,15 +61,30 @@ export const Buttons = styled.div`
   gap: 2rem;
 
   margin-top: 3rem;
+
+  button {
+    font-size: 1.25rem;
+    font-weight: 700;
+    position: relative;
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 2.5rem;
+    gap: 0.75rem;
+
+    button {
+      font-size: 1rem;
+    }
+  }
 `
 export const Copy = styled.button`
   padding: 1rem 3.125rem;
 
-  font-size: 1.25rem;
-  font-weight: 700;
   color: #81bece;
-
-  position: relative;
 
   background: transparent;
   border: none;
@@ -78,17 +105,17 @@ export const Copy = styled.button`
   }
 
   :hover {
-    cursor: pointer;
-
     ::before {
       background: linear-gradient(135deg, #81bece, #205767);
     }
   }
+
+  @media (max-width: 800px) {
+    padding: 0.75rem 1.25rem;
+  }
 `
 
 export const Send = styled.button`
-  font-size: 1.25rem;
-  font-weight: 700;
   color: white;
 
   padding: 1rem 2rem;
@@ -102,18 +129,12 @@ export const Send = styled.button`
 
   background: linear-gradient(94.98deg, #036280 0%, #51a0b5 100%);
 
-  :hover {
-    cursor: pointer;
-  }
-`
-export const Mobile = styled.div`
-  height: 100%;
+  @media (max-width: 800px) {
+    padding: 0.75rem 1rem;
+    gap: 0.3rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 1000px) {
-    display: none;
+    img {
+      width: 1.25rem !important;
+    }
   }
 `
