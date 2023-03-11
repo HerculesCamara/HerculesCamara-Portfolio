@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.main`
   padding: 6.75rem;
   flex: 1;
-  
+
   @media (max-width: 1000px) {
     padding: 2rem;
     display: flex;
@@ -33,15 +33,21 @@ export const Content = styled.div`
   justify-content: space-between;
   gap: 1rem;
 
-  @media (max-width: 1000px) {
-    margin-left: 0;
-  }  
+  @media (max-width: 700px) {
+    /* margin-left: 0; */
+  }
 `
 
-export const Apresentation = styled.div``
+export const Apresentation = styled.div`
+  max-width: 30rem;
+`
 
 export const MyPicture = styled.div`
   @media (max-width: 1000px) {
+    width: 12rem;
+  }
+
+  @media (max-width: 700px) {
     display: none;
   }
 `
@@ -62,11 +68,11 @@ export const Im = styled.div`
   }
 
   @media (max-width: 1000px) {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
 
-      span {
-        font-size: 2.125rem;
-      }
+    span {
+      font-size: 2.125rem;
+    }
   }
 `
 
@@ -88,7 +94,7 @@ export const About = styled.p`
   }
 
   @media (max-width: 1000px) {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 `
 
@@ -102,10 +108,10 @@ export const Buttons = styled.div`
   font-weight: 700;
 
   @media (max-width: 1000px) {
-      gap: 1rem;
-      margin-top: 2.5rem;
+    gap: 1rem;
+    margin-top: 2.5rem;
 
-      font-size: 1rem;
+    font-size: 1rem;
   }
 `
 
@@ -120,7 +126,7 @@ export const Projects = styled.button`
   border: none;
 
   transition: all 0.2s;
-  
+
   display: flex;
   align-items: center;
 
@@ -211,7 +217,7 @@ export const Projects = styled.button`
   }
 
   @media (max-width: 1000px) {
-      padding: 0.75rem 2.625rem;
+    padding: 0.75rem 2.625rem;
   }
 `
 
@@ -238,11 +244,11 @@ export const Contact = styled.button`
   }
 
   @media (max-width: 1000px) {
-      padding: 0.75rem 2rem;
-      gap: 0.625rem;
+    padding: 0.75rem 2rem;
+    gap: 0.625rem;
 
-      img {
-        width: 1.2rem !important;
-      }
+    img {
+      width: 1.2rem !important;
+    }
   }
 `
