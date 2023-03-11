@@ -5,8 +5,8 @@ export const Container = styled.main`
 
   padding: 7.125rem 6.75rem;
 
-  @media (max-width: 1000px) {
-    display: none;
+  @media (max-width: 700px) {
+    padding: 2.5rem 2rem;
   }
 `
 
@@ -41,6 +41,18 @@ export const Apresentation = styled.div`
     color: var(--gray-light);
 
     margin-top: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+
+      margin-top: 1.25rem;
+    }
   }
 `
 
@@ -85,6 +97,29 @@ export const Setup = styled.div`
       font-size: 1.25rem;
       font-weight: 200;
       color: var(--gray-light);
+    }
+  }
+
+  @media (max-width: 700px) {
+    margin-top: 2.5rem;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+
+
+      :first-of-type {
+        margin-top: 1rem;
+      }
+    }
+
+    ul {
+      li {
+        font-size: 1rem;
+      }
     }
   }
 `

@@ -69,9 +69,6 @@ const WorkIn: NextPage = () => {
         </Content>
       </Container>
       <Footer />
-      <Mobile>
-        <WorkInProgress />
-      </Mobile>
     </>
   )
 }
