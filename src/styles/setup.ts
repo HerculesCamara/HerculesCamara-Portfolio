@@ -110,7 +110,6 @@ export const Setup = styled.div`
     p {
       font-size: 1rem;
 
-
       :first-of-type {
         margin-top: 1rem;
       }
@@ -121,16 +120,5 @@ export const Setup = styled.div`
         font-size: 1rem;
       }
     }
-  }
-`
-export const Mobile = styled.div`
-  height: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 1000px) {
-    display: none;
   }
 `

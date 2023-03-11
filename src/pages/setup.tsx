@@ -1,13 +1,6 @@
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { WorkInProgress } from '@/components/WorkInProgress'
-import {
-  Apresentation,
-  Container,
-  Content,
-  Mobile,
-  Setup
-} from '@/styles/setup'
+import { Apresentation, Container, Content, Setup } from '@/styles/setup'
 import { NextPage } from 'next'
 import Head from 'next/head'
 
