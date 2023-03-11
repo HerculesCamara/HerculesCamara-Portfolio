@@ -9,7 +9,7 @@ export const Container = styled.main`
   padding-right: 6.75rem;
 
   @media (max-width: 1000px) {
-    display: none;
+    padding: 2.5rem 2rem;
   }
 `
 export const Content = styled.div`
@@ -30,6 +30,7 @@ export const Me = styled.div`
 export const Apresentation = styled.div`
   width: 100%;
   max-width: 35.25rem;
+  padding-bottom: 2rem;
 
   h1 {
     font-size: 2.25rem;
@@ -42,6 +43,8 @@ export const Apresentation = styled.div`
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       color: black;
+
+      white-space: nowrap;
     }
   }
 
@@ -56,13 +59,33 @@ export const Apresentation = styled.div`
       margin-top: 2rem;
     }
   }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    p {
+      font-size: 1rem;
+
+      margin-top: 0.5rem;
+
+      :first-of-type {
+        margin-top: 1.25rem;
+      }
+    }
+  }
 `
 
 export const Picture = styled.div`
   margin-top: -0.5rem;
-  
+
   image {
     max-width: 18.5rem;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
   }
 `
 
@@ -71,6 +94,12 @@ export const Career = styled.div`
     font-size: 2.25rem;
     font-weight: 700;
     color: var(--gray-light);
+  }
+
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.75rem;
+    }
   }
 `
 
@@ -86,6 +115,10 @@ export const TimeLine = styled.div`
     background-image: linear-gradient(180deg, #e1e1e6 0%, #e1e1e600 100%);
     content: '';
     left: 14px;
+  }
+
+  @media (max-width: 600px) {
+    margin-top: 1.25rem;
   }
 `
 
@@ -141,15 +174,10 @@ export const Date = styled.div`
     margin-top: 80px;
     padding-bottom: 20px;
   }
-`
-export const Mobile = styled.div`
-  height: 100%;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 1000px) {
-    display: none;
+  @media (max-width: 600px) {
+    h4 {
+      font-size: 1rem;
+    }
   }
 `

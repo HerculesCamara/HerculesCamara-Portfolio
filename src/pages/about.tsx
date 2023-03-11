@@ -82,9 +82,6 @@ const About: NextPage = () => {
         </Content>
       </Container>
       <Footer />
-      <Mobile>
-        <WorkInProgress />
-      </Mobile>
     </>
   )
 }
