@@ -46,7 +46,7 @@ const Home: NextPage = () => {
               .
             </About>
             <Buttons>
-              <Projects as="a" href="/work-in">
+              <Projects as="a" href="/projects">
                 Projects
               </Projects>
               <Contact as="a" href="/contact">

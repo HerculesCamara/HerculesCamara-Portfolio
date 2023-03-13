@@ -10,7 +10,7 @@ export function Navigation() {
     <NavigationContainer>
       <List>
         <Item isActive={route === '/projects'}>
-          <Link href="work-in">Projects</Link>
+          <Link href="projects">Projects</Link>
         </Item>
         <Item isActive={route === '/about'}>
           <Link href="about">About</Link>
