@@ -8,7 +8,6 @@ import {
   Contact,
   Content,
   Apresentation,
-  /* Mobile, */
   Buttons,
   MyPicture
 } from '../styles/Home'
@@ -19,7 +18,6 @@ import Image from 'next/image'
 import arrow from '@/assets/arrow-right.svg'
 import picture from '@/assets/me-home.png'
 import Head from 'next/head'
-import { WorkInProgress } from '@/components/WorkInProgress'
 
 const Home: NextPage = () => {
   return (
@@ -62,9 +60,6 @@ const Home: NextPage = () => {
         </Content>
       </Container>
       <Footer />
-      {/* <Mobile>
-        <WorkInProgress />
-      </Mobile> */}
     </>
   )
 }
