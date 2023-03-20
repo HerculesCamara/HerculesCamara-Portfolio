@@ -30,6 +30,8 @@ export const TopProjects = styled.div`
 export const Carroussel = styled.div`
   margin-top: 2.25rem;
 
+  padding-bottom: 0.7rem;
+
   display: flex;
   gap: 1.5rem;
 

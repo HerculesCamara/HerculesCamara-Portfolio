@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  width: 16.5rem;
+  width: 100%;
   min-width: 16.5rem;
+  max-width: 16.5rem;
   height: 16.5rem;
 
   background: var(--gray-dark-medium);
@@ -16,6 +17,15 @@ export const Container = styled.div`
 
   :hover {
     filter: brightness(1.1);
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+    min-width: 16.5rem;
+    max-width: 18rem;
+    
+    /* height: auto;
+    min-height: 16.5rem; */
   }
 `
 
