@@ -15,7 +15,7 @@ export const Container = styled.header`
   justify-content: space-between;
 
   @media (max-width: 1000px) {
-    padding-top: 4.375rem;
+    padding-top: 2rem;
     padding-left: 2rem;
     padding-right: 2rem;
 

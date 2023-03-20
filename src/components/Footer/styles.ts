@@ -80,7 +80,7 @@ interface BurguerMenuProps {
 }
 
 export const MobileContent = styled.div`
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   max-width: 12.5rem;
   width: 100%;
   margin: auto;
