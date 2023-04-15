@@ -18,8 +18,6 @@ export function ContentSelector(){
     }
   ]
 
-  console.log(router)
-
   return (<>
   <Container>
     {options.map((option, index) =>

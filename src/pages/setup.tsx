@@ -35,27 +35,27 @@ const WorkIn: NextPage = () => {
             </ul>
           </Setup>
           <Setup>
-            <h2>
+          <h2>
               <span>Personal</span>
             </h2>
-            <p>AMD Ryzen 5 2400G</p>
-            <p>Radeon RX570 8GB</p>
-            <p>16GB RAM</p>
-            <p>SSD 240GB</p>
-            <p>HD Toshiba 1TB</p>
-            <p>Gabinete Bluecase BG022</p>
-            <p>Fonte ElectroV2 PCYes 500W</p> <p>Placa mãe Asus B-250</p>
+            <p>Notebook Dell G15:</p>
+            <ul>
+              <li>I5 12th Gen</li>
+              <li>8GB RAM</li>
+              <li>NVIDIA GeForce RTX3050</li>
+              <li>SSD 240GB</li>
+            </ul>
           </Setup>
           <Setup>
             <h2>
               <span>Periferics</span>
             </h2>
-            <p>Keyboard T-Dager</p>
-            <p>Mouse Logitech</p>
-            <p>Headset Redragon</p>
-            <p>Monitor AOC 21’</p>
+            <p>Keyboard Philco Gaming</p>
+            <p>Mouse Philco Gaming</p>
+            <p>Headset WAAW</p>
             <p>Monitor LG 24’</p>
-            <p>Mousepad Husky</p>
+            <p>Monitor Dell G15 120hz 15’</p>
+            <p>Mousepad PlayStation</p>
             <p>Cadeira DxRacer</p>
             <p>Mouse Wireless Dell</p>
           </Setup>
@@ -67,31 +67,3 @@ const WorkIn: NextPage = () => {
 }
 
 export default WorkIn
-
-/* document.getElementById('isi-stick-button').addEventListener('click', scrollIsi)
-
-function scrollIsi() {
-  document.getElementById('foter-isi')?.scrollIntoView()
-  console.log('test')
-}
-
-document.getElementById('isi-stick-button').addEventListener('click', scrollIsi)
-
-function scrollIsi() {
-  document.getElementById('block-isifull')?.scrollIntoView()
-  console.log('clicked')
-}
-
-
-
-let images = document.querySelectorAll('img')
-
-data-block-plugin-id
-
-block-navigationlogoimage
-
-document
-  .getElementById('block-navigationlogoimage')
-  .removeAttribute('data-block-plugin-id')
-
-document.querySelectorAll('img').removeAttribute('loading') */

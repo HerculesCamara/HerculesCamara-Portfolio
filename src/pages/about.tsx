@@ -31,11 +31,11 @@ const About: NextPage = () => {
               <h1>
                 About <span>Hércules Câmara</span>
               </h1>
-              <p>I’m Hércules Câmara and I’m have 20 years.</p>
+              <p>I’m Hércules Câmara and I’m have 21 years.</p>
 
               <p>
-                I’m a Computer Science student at UFMT, I’m a front-end
-                developer at hitdigital and I produce projects in my spare time.
+                I’m a Software Engineer student at UniEvangélica, I’m a front-end
+                developer at HitDigital and I produce projects in my spare time.
               </p>
 
               <p>In my free time I also like to watch series and anime.</p>
@@ -47,6 +47,14 @@ const About: NextPage = () => {
           <Career>
             <h2>Career</h2>
             <TimeLine>
+            <Date>
+                <h4>
+                  2023<span>/01</span>
+                </h4>
+                <p>
+                  UniEvangélica, Software Engineer graduation: <span>start</span>
+                </p>
+              </Date>
               <Date>
                 <h4>
                   2022<span>/01</span>
