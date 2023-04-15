@@ -5,9 +5,24 @@ export const Container = styled.main`
   flex: 1;
 
   @media (max-width: 1000px) {
-    display: none;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
   }
 `
+
+/* export const Mobile = styled.div`
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1000px) {
+    display: none;
+  }
+` */
+
 export const Content = styled.div`
   max-width: 65.375rem;
   margin-left: auto;
@@ -17,9 +32,25 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+
+  @media (max-width: 700px) {
+    /* margin-left: 0; */
+  }
 `
 
-export const Apresentation = styled.div``
+export const Apresentation = styled.div`
+  max-width: 30rem;
+`
+
+export const MyPicture = styled.div`
+  @media (max-width: 1000px) {
+    width: 12rem;
+  }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+`
 
 export const Im = styled.div`
   font-size: 2.75rem;
@@ -34,6 +65,14 @@ export const Im = styled.div`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: black;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 1.75rem;
+
+    span {
+      font-size: 2.125rem;
+    }
   }
 `
 
@@ -53,6 +92,10 @@ export const About = styled.p`
       filter: brightness(0.88);
     }
   }
+
+  @media (max-width: 1000px) {
+    font-size: 1rem;
+  }
 `
 
 export const Buttons = styled.div`
@@ -60,13 +103,21 @@ export const Buttons = styled.div`
   gap: 2.125rem;
 
   margin-top: 3rem;
+
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  @media (max-width: 1000px) {
+    gap: 1rem;
+    margin-top: 2.5rem;
+
+    font-size: 1rem;
+  }
 `
 
 export const Projects = styled.button`
   padding: 1rem 3.125rem;
 
-  font-size: 1.25rem;
-  font-weight: 700;
   color: #81bece;
 
   position: relative;
@@ -74,7 +125,10 @@ export const Projects = styled.button`
   background: transparent;
   border: none;
 
-  /* transition: all 1s; */
+  transition: all 0.2s;
+
+  display: flex;
+  align-items: center;
 
   ::before {
     content: '';
@@ -92,15 +146,82 @@ export const Projects = styled.button`
   :hover {
     cursor: pointer;
 
+    filter: brightness(0.9);
+
     ::before {
-      background: linear-gradient(135deg, #81bece, #205767);
+      /* -webkit-animation: AnimationName 1s ease infinite;
+      -moz-animation: AnimationName 1s ease infinite; */
+      /* animation: AnimationName 5s ease infinite; */
+
+      /* @-webkit-keyframes AnimationName {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      @-moz-keyframes AnimationName {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      } */
+      @keyframes AnimationName {
+        100% {
+          background: linear-gradient(135deg, #205767, #81bece);
+        }
+        /* 0% {
+          background: linear-gradient(135deg, #205767, #81bece);
+        }
+        10% {
+          background: linear-gradient(155deg, #205767, #81bece);
+        }
+        20% {
+          background: linear-gradient(175deg, #205767, #81bece);
+        }
+        30% {
+          background: linear-gradient(195deg, #205767, #81bece);
+        }
+        40% {
+          background: linear-gradient(215deg, #205767, #81bece);
+        }
+        50% {
+          background: linear-gradient(235deg, #205767, #81bece);
+        }
+        60% {
+          background: linear-gradient(255deg, #205767, #81bece);
+        }
+        70% {
+          background: linear-gradient(275deg, #205767, #81bece);
+        }
+        80% {
+          background: linear-gradient(295deg, #205767, #81bece);
+        }
+        90% {
+          background: linear-gradient(315deg, #205767, #81bece);
+        }
+        100% {
+          background: linear-gradient(335deg, #205767, #81bece);
+        } */
+      }
     }
+  }
+
+  @media (max-width: 1000px) {
+    padding: 0.75rem 2.625rem;
   }
 `
 
 export const Contact = styled.button`
-  font-size: 1.25rem;
-  font-weight: 700;
   color: white;
 
   padding: 1rem 2rem;
@@ -114,19 +235,20 @@ export const Contact = styled.button`
 
   background: linear-gradient(94.98deg, #036280 0%, #51a0b5 100%);
 
+  transition: filter 0.2s;
+
   :hover {
     cursor: pointer;
+
+    filter: brightness(1.1);
   }
-`
 
-export const Mobile = styled.div`
-  height: 100%;
+  @media (max-width: 1000px) {
+    padding: 0.75rem 2rem;
+    gap: 0.625rem;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: 1000px) {
-    display: none;
+    img {
+      width: 1.2rem !important;
+    }
   }
 `

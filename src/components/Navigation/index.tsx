@@ -1,17 +1,16 @@
-import { Item, List, NavigationContainer } from "./styles";
+import { Item, List, NavigationContainer } from './styles'
 
 import { useRouter } from 'next/router'
-import Link from "next/link";
+import Link from 'next/link'
 
-export function Navigation(){
-
+export function Navigation() {
   const { route } = useRouter()
 
   return (
     <NavigationContainer>
       <List>
         <Item isActive={route === '/projects'}>
-          <Link href="work-in">Projects</Link>
+          <Link href="projects">Projects</Link>
         </Item>
         <Item isActive={route === '/about'}>
           <Link href="about">About</Link>

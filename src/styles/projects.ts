@@ -3,6 +3,10 @@ import styled from 'styled-components'
 export const Container = styled.main`
   width: 100%;
   padding: 4.75rem 6.75rem;
+
+  @media (max-width: 1100px) {
+    padding: 2.5rem 2rem;
+  }
 `
 
 export const Content = styled.div`
@@ -16,7 +20,7 @@ export const Content = styled.div`
 export const TopProjects = styled.div`
   margin-top: 2.625rem;
 
-  h1 {
+  > h1 {
     font-size: 1.375rem;
     font-weight: 700;
     color: var(--gray-light);
@@ -25,6 +29,8 @@ export const TopProjects = styled.div`
 
 export const Carroussel = styled.div`
   margin-top: 2.25rem;
+
+  padding-bottom: 0.7rem;
 
   display: flex;
   gap: 1.5rem;
@@ -58,10 +64,7 @@ export const AllProjectsContent = styled.div`
 
   display: grid;
   justify-content: space-around;
-  grid-template-columns: auto auto auto auto;
   gap: 1.5rem;
 
-  @media (max-width: 1280px) {
-    grid-template-columns: auto auto auto;
-  }
+  grid-template-columns: repeat(auto-fit, 16rem);
 `

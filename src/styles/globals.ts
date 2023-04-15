@@ -12,6 +12,7 @@ const styles = css`
 
     --blue-light: #81bece;
     --blue-medium: #378ba4;
+    --blue-dark: #215869;
   }
 
   html,
@@ -38,7 +39,26 @@ const styles = css`
     padding: 0;
     box-sizing: border-box;
 
-    
+    ::-webkit-scrollbar {
+      width: 7px;
+
+      transition: background 0.2s;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: var(--gray-dark-medium);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: var(--gray-medium);
+    }
   }
 
   #__next {

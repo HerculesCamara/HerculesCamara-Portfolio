@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
-import { Header } from '../components/Header'
+import type { NextPage } from "next";
+import { Header } from "../components/Header";
 import {
   About,
   Container,
@@ -8,17 +8,16 @@ import {
   Contact,
   Content,
   Apresentation,
-  Mobile,
-  Buttons
-} from '../styles/Home'
+  Buttons,
+  MyPicture,
+} from "../styles/Home";
 
-import { Footer } from '../components/Footer'
-import Image from 'next/image'
+import { Footer } from "../components/Footer";
+import Image from "next/image";
 
-import arrow from '@/assets/arrow-right.svg'
-import picture from '@/assets/me-home.png'
-import Head from 'next/head'
-import { WorkInProgress } from '@/components/WorkInProgress'
+import arrow from "@/assets/arrow-right.svg";
+import picture from "@/assets/me-home.png";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
@@ -33,10 +32,10 @@ const Home: NextPage = () => {
             <Im>
               Hi! 👋
               <br />
-              Im <span>Hércules Câmara</span>
+              I&apos;m <span>Hércules Câmara</span>
             </Im>
             <About>
-              Web developer and UI/UX designer | Front-end dev at{' '}
+              Web developer and UI/UX designer | Front-end dev at{" "}
               <a
                 href="https://hitdigital.com.br/"
                 target="_blank"
@@ -47,7 +46,7 @@ const Home: NextPage = () => {
               .
             </About>
             <Buttons>
-              <Projects as="a" href="/work-in">
+              <Projects as="a" href="/projects">
                 Projects
               </Projects>
               <Contact as="a" href="/contact">
@@ -55,15 +54,14 @@ const Home: NextPage = () => {
               </Contact>
             </Buttons>
           </Apresentation>
-          <Image src={picture} />
+          <MyPicture>
+            <Image src={picture} />
+          </MyPicture>
         </Content>
       </Container>
       <Footer />
-      <Mobile>
-        <WorkInProgress />
-      </Mobile>
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

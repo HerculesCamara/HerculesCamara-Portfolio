@@ -1,18 +1,26 @@
 import { Container, Content, Cover } from './styles'
 
-export function Card() {
+export interface cardProps {
+  id?: string
+  title?: string
+  description?: string
+  bannerLink?: string
+  link?: string
+  topProject?: boolean
+}
+
+export function Card({ title, description, bannerLink, link }: cardProps) {
   return (
-    <>
+    <a href={link} target='_blank' rel="noreferrer">
       <Container>
-        <Cover />
+        <Cover>
+          <img src={bannerLink} alt="" />
+        </Cover>
         <Content>
-          <h1>AutoCalc</h1>
-          <p>
-            Lists in a more user-friendly and easy-to-understand way the
-            mathematical formulas.
-          </p>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </Content>
       </Container>
-    </>
+    </a>
   )
 }

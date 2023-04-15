@@ -7,8 +7,13 @@ export const Container = styled.div`
   justify-content: flex-end;
 `
 
-export const FilterButton = styled.button`
-  background: transparent;
+interface FilterProps {
+  isActive?: boolean
+}
+
+export const FilterButton = styled.button<FilterProps>`
+  background: ${(props) =>
+    props.isActive ? 'var(--gray-dark-medium)' : 'transparent'};
   border: none;
   border-radius: 4px;
   padding: 0.5rem;
@@ -45,7 +50,8 @@ export const FilterButton = styled.button`
   }
 `
 
-export const List = styled.ul`
+export const List = styled.ul<FilterProps>`
+  display: ${(props) => (props.isActive ? 'block' : 'none')};
   list-style-type: none;
 
   position: absolute;
@@ -55,6 +61,9 @@ export const List = styled.ul`
   top: calc(100% + 2px);
   border: none;
   border-radius: 4px;
+  overflow: hidden;
+
+  z-index: 1;
 `
 
 export const Item = styled.li`
@@ -68,6 +77,7 @@ export const Item = styled.li`
 
   width: 100%;
   background: var(--gray-dark-medium);
+  white-space: nowrap;
 
   transition: filter 0.2s;
 

@@ -8,8 +8,7 @@ import {
   Picture,
   TimeLine,
   Date,
-  Content,
-  Mobile
+  Content
 } from '@/styles/about'
 
 import { NextPage } from 'next'
@@ -17,7 +16,6 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import me from '@/assets/me-about.png'
-import { WorkInProgress } from '@/components/WorkInProgress'
 
 const About: NextPage = () => {
   return (
@@ -64,7 +62,7 @@ const About: NextPage = () => {
               <Date>
                 <h4>2019</h4>
                 <p>
-                  IMFT, Computing course: <span>end</span>
+                  IFMT, Computing course: <span>end</span>
                 </p>
               </Date>
               <Date>
@@ -82,9 +80,6 @@ const About: NextPage = () => {
         </Content>
       </Container>
       <Footer />
-      <Mobile>
-        <WorkInProgress />
-      </Mobile>
     </>
   )
 }

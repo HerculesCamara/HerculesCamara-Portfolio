@@ -1,4 +1,8 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+
+interface SelectorProps {
+  isActive?: boolean;
+}
 
 export const Container = styled.div`
   width: 100%;
@@ -18,27 +22,26 @@ export const Container = styled.div`
       rgba(129, 190, 206, 0.3) 100%
     );
   }
-`
+`;
 
-export const Selector = styled.button`
+export const Selector = styled.a<SelectorProps>`
   font-size: 1.125rem;
   font-weight: 700;
-  color: var(--gray-medium);
-
-  background: transparent;
   border: none;
   border-radius: 8px;
+  /* min-width: 100px; */
+  text-align: center;
 
   cursor: pointer;
   transition: color 0.2s;
 
-  :first-of-type {
-    background: var(--gray-dark-medium);
-    color: var(--gray-light);
-    padding: 0.5rem 1.375rem;
-  }
+  background: ${({ isActive }) =>
+    isActive ? " var(--gray-dark-medium)" : "transparent"};
+  color: ${({ isActive }) =>
+    isActive ? "var(--gray-light)" : "var(--gray-medium);"};
+  padding: 0.5rem 1.375rem;
 
   :hover {
     color: var(--gray-light);
   }
-`
+`;
