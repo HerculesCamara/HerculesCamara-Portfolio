@@ -1,5 +1,5 @@
-import type { NextPage } from 'next'
-import { Header } from '../components/Header'
+import type { NextPage } from "next";
+import { Header } from "../components/Header";
 import {
   About,
   Container,
@@ -9,15 +9,15 @@ import {
   Content,
   Apresentation,
   Buttons,
-  MyPicture
-} from '../styles/Home'
+  MyPicture,
+} from "../styles/Home";
 
-import { Footer } from '../components/Footer'
-import Image from 'next/image'
+import { Footer } from "../components/Footer";
+import Image from "next/image";
 
-import arrow from '@/assets/arrow-right.svg'
-import picture from '@/assets/me-home.png'
-import Head from 'next/head'
+import arrow from "@/assets/arrow-right.svg";
+import picture from "@/assets/me-home.png";
+import Head from "next/head";
 
 const Home: NextPage = () => {
   return (
@@ -32,10 +32,10 @@ const Home: NextPage = () => {
             <Im>
               Hi! 👋
               <br />
-              Im <span>Hércules Câmara</span>
+              I&apos;m <span>Hércules Câmara</span>
             </Im>
             <About>
-              Web developer and UI/UX designer | Front-end dev at{' '}
+              Web developer and UI/UX designer | Front-end dev at{" "}
               <a
                 href="https://hitdigital.com.br/"
                 target="_blank"
@@ -61,7 +61,7 @@ const Home: NextPage = () => {
       </Container>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
