@@ -35,15 +35,7 @@ const Home: NextPage = () => {
               I&apos;m <span>Hércules Câmara</span>
             </Im>
             <About>
-              Web developer and UI/UX designer | Front-end dev at{" "}
-              <a
-                href="https://hitdigital.com.br/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                HitDigital
-              </a>
-              .
+              Web developer and UI/UX designer.
             </About>
             <Buttons>
               <Projects as="a" href="/projects">
